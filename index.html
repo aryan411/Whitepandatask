@@ -1,0 +1,515 @@
+<!doctype html>
+
+ <html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ela Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    #weatherWidget .currentDesc {
+        color: #ffffff!important;
+    }
+        .traffic-chart {
+            min-height: 335px;
+        }
+        #flotPie1  {
+            height: 150px;
+        }
+        #flotPie1 td {
+            padding:3px;
+        }
+        #flotPie1 table {
+            top: 20px!important;
+            right: -10px!important;
+        }
+        .chart-container {
+            display: table;
+            min-width: 270px ;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #flotLine5  {
+             height: 105px;
+        }
+
+        #flotBarChart {
+            height: 150px;
+        }
+        #cellPaiChart{
+            height: 160px;
+        }
+
+       
+#graybox {
+  background-color: rgb(243, 243, 243);
+  width: 900px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 20px;
+  
+}
+.myButton {
+	box-shadow: 2px 2px 8px -1px #b8b8b8;
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:10px;
+	border:1px solid #1ee6a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#1ee6a3;
+	font-family:Arial;
+	font-size:14px;
+	padding:12px 50px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #8e9199;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        
+            
+                <ul class="nav navbar-nav">
+                   <li class="menu-item-has-children dropdown" >
+                        <div style="margin-top: 50px; margin-right: 30px; font-size:23px; text-align: right" ><i class="fa fa-search"></i></div>
+                    </li> 
+                   <li class="menu-item-has-children dropdown" >
+                        <div style="margin-top: 30px; margin-right: 25px; font-size:20px; text-align: right" ><i class='fas fa-store' ></i></div>
+                    </li> 
+                    <li class="menu-item-has-children dropdown">
+                        <div style="margin-top: 30px; margin-right: 25px; font-size:25px; text-align: right" ><i class="fa fa-navicon" ></i></div>
+                    </li>
+                    
+                     
+                </ul> 
+           
+    </aside>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./"><img src="images/whitepanda2.png" alt="Logo" style="margin: auto; margin-left:50px "></a>
+                    
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                        
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">3</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Server #1 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Server #2 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Server #3 overloaded.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/panda.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /#header -->
+        <!-- Content -->
+        <div class="content">
+            <h1 style="margin-top:40px; margin-bottom: 60px; margin-left: 60px">Content store</h1>
+            <div id=graybox style="margin: 60px">
+                <h5 style="color: #1ee6a3">Got bulk orders or almost similar orders ? Fill the order brief in an excel sheet</h5>
+                <br>
+                <p>if you're wondering about an easy way to place orders in large numbers, we provide a way customized just for that.Download our excel sheet, and fill the order brief in the prescribed format and submit. In case you need any help,<u>we are just a click away to assist you in placeing your order</u></p>
+                <br>
+                <a href="#" class="myButton">Order via Excel sheet</a>
+            </div>
+            <!-- Animated -->
+            <div class="animated fadeIn">
+                    <div class="row" style="margin: 50px">
+                    
+                        <div class="col-md-4">
+                                <div class="feed-box">
+                                    <section class="card">
+                                        <div class="card-body">
+                                            <div class="corner-ribon blue-ribon">
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                            <div class="media" style="margin-bottom: 10px" >
+                                                    <a href="#">
+                                                        <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                    </a>
+                                                    <div class="media-body" style="margin-left: 10px">
+                                                        <h2 class=" display-6">Blog / Article</h2>
+                                                        <p>from Rs.500</p>
+                                                    </div>
+                                                </div>
+                                            
+                                            <p>
+                                                Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                            </p>
+                                            <a href="#" class="myButton">Order</a>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="feed-box">
+                                        <section class="card">
+                                            <div class="card-body">
+                                                <div class="corner-ribon blue-ribon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </div>
+                                                <div class="media" style="margin-bottom: 10px" >
+                                                        <a href="#">
+                                                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                        </a>
+                                                        <div class="media-body" style="margin-left: 10px">
+                                                            <h2 class=" display-6" style="color: #1ee6a3" >Newsletter / E-mailer</h2>
+                                                            <p>from Rs.1000</p>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <p>
+                                                    Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                </p>
+                                                <a href="#" class="myButton">Order</a>
+                                            </div>
+                                        </section>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="feed-box">
+                                            <section class="card">
+                                                <div class="card-body">
+                                                    <div class="corner-ribon blue-ribon">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </div>
+                                                    <div class="media" style="margin-bottom: 10px" >
+                                                            <a href="#">
+                                                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                            </a>
+                                                            <div class="media-body" style="margin-left: 10px">
+                                                                <h2 class=" display-6">Whitepaper</h2>
+                                                                <p>from Rs.2000</p>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    <p>
+                                                        Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                    </p>
+                                                    <a href="#" class="myButton">Order</a>
+                                                </div>
+                                            </section>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="feed-box">
+                                                <section class="card">
+                                                    <div class="card-body">
+                                                        <div class="corner-ribon blue-ribon">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </div>
+                                                        <div class="media" style="margin-bottom: 10px" >
+                                                                <a href="#">
+                                                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                </a>
+                                                                <div class="media-body" style="margin-left: 10px">
+                                                                    <h2 class=" display-6">e-book</h2>
+                                                                    <p>from Rs.1000</p>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        <p>
+                                                            Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                        </p>
+                                                        <a href="#" class="myButton">Order</a>
+                                                    </div>
+                                                </section>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="feed-box">
+                                                    <section class="card">
+                                                        <div class="card-body">
+                                                            <div class="corner-ribon blue-ribon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </div>
+                                                            <div class="media" style="margin-bottom: 10px" >
+                                                                    <a href="#">
+                                                                        <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                    </a>
+                                                                    <div class="media-body" style="margin-left: 10px">
+                                                                        <h2 class=" display-6">Report / Guide</h2>
+                                                                        <p>from Rs.1000</p>
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                            <p>
+                                                                Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                            </p>
+                                                            <a href="#" class="myButton">Order</a>
+                                                        </div>
+                                                    </section>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <div class="feed-box">
+                                                        <section class="card">
+                                                            <div class="card-body">
+                                                                <div class="corner-ribon blue-ribon">
+                                                                    <i class="fa fa-twitter"></i>
+                                                                </div>
+                                                                <div class="media" style="margin-bottom: 10px" >
+                                                                        <a href="#">
+                                                                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                        </a>
+                                                                        <div class="media-body" style="margin-left: 10px">
+                                                                            <h2 class=" display-6">Product Description</h2>
+                                                                            <p>from Rs.500</p>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                <p>
+                                                                    Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                                </p>
+                                                                <a href="#" class="myButton">Order</a>
+                                                            </div>
+                                                        </section>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="feed-box">
+                                                            <section class="card">
+                                                                <div class="card-body">
+                                                                    <div class="corner-ribon blue-ribon">
+                                                                        <i class="fa fa-twitter"></i>
+                                                                    </div>
+                                                                    <div class="media" style="margin-bottom: 10px" >
+                                                                            <a href="#">
+                                                                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                            </a>
+                                                                            <div class="media-body" style="margin-left: 10px">
+                                                                                <h2 class=" display-6">website Content</h2>
+                                                                                <p>from Rs.1000</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    
+                                                                    <p>
+                                                                        Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                                    </p>
+                                                                    <a href="#" class="myButton">Order</a>
+                                                                </div>
+                                                            </section>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                            <div class="feed-box">
+                                                                <section class="card">
+                                                                    <div class="card-body">
+                                                                        <div class="corner-ribon blue-ribon">
+                                                                            <i class="fa fa-twitter"></i>
+                                                                        </div>
+                                                                        <div class="media" style="margin-bottom: 10px" >
+                                                                                <a href="#">
+                                                                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                                </a>
+                                                                                <div class="media-body" style="margin-left: 10px">
+                                                                                    <h2 class=" display-6">Video Script</h2>
+                                                                                    <p>from Rs.1000</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+                                                                        <p>
+                                                                            Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                                        </p>
+                                                                        <a href="#" class="myButton">Order</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                                <div class="feed-box">
+                                                                    <section class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="corner-ribon blue-ribon">
+                                                                                <i class="fa fa-twitter"></i>
+                                                                            </div>
+                                                                            <div class="media" style="margin-bottom: 10px" >
+                                                                                    <a href="#">
+                                                                                        <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                                    </a>
+                                                                                    <div class="media-body" style="margin-left: 10px">
+                                                                                        <h2 class=" display-6">Company Profile / Brpchure</h2>
+                                                                                        <p>from Rs.500</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                            <p>
+                                                                                Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                                            </p>
+                                                                            <a href="#" class="myButton">Order</a>
+                                                                        </div>
+                                                                    </section>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                    <div class="feed-box">
+                                                                        <section class="card">
+                                                                            <div class="card-body">
+                                                                                <div class="corner-ribon blue-ribon">
+                                                                                    <i class="fa fa-twitter"></i>
+                                                                                </div>
+                                                                                <div class="media" style="margin-bottom: 10px" >
+                                                                                        <a href="#">
+                                                                                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/panda.jpg">
+                                                                                        </a>
+                                                                                        <div class="media-body" style="margin-left: 10px">
+                                                                                            <h2 class=" display-6">Press Relese</h2>
+                                                                                            <p>from Rs.2000</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                <p>
+                                                                                    Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users
+                                                                                </p>
+                                                                                <a href="#" class="myButton">Order</a>
+                                                                            </div>
+                                                                        </section>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                            
+            </div>  
+        </div>
+        <footer >
+            <div style="text-align:center">
+                <span style="margin:20px "><i class="fa fa-facebook-f" style="font-size:36px " ></i></span>
+                <span style="margin:20px "> <i class="fa fa-instagram" style="font-size:36px"></i></span>
+                <span style="margin:20px "> <i class="fa fa-linkedin" style="font-size:36px"></i></span>
+                <span style="margin:20px "> <i class="fa fa-twitter" style="font-size:36px"></i></span>
+                <br><br>
+                <p style="margin-bottom:0px ">Copyright @ 2019 white Panda Media Pvt. Ltd.</p>
+                <p>All rights reserved</p>
+                
+                <p><u>Privacy policy</u> | <u>Terms of service</u> | <u>Service Agreement</u> | <u>Contact us</u></p>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <!-- /#right-panel -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!--  Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
+
+    <!--Chartist Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="assets/js/init/weather-init.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
+    <script src="assets/js/init/fullcalendar-init.js"></script>
+
+    
+   
+</body>
+</html>
